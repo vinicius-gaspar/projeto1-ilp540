@@ -1,0 +1,13 @@
+:root {
+    --color-background: #6088EE;
+    --color-primary: #143B57;
+    --color-secondary: #C6DF2D;
+    font-size: 60%; /* controle das medidas rem */
+}
+
+body {
+    background: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
