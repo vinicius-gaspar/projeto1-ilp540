@@ -1,0 +1,97 @@
+.navbar{
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+    position: fixed;
+    top: 0;
+    background: var(--color-primary);
+}
+
+.logo{
+    font: 700 2.5rem Oleo Script Swash Caps;
+    color: var(--color-secondary);
+
+    height: fit-content;
+    margin-top: 0.5rem;
+}
+
+.logo p{
+    line-height: 0%;
+}
+
+.nav-anchors {
+    margin-left: 80rem;
+    height: fit-content;
+    margin-top: 0.7rem;
+}
+
+.nav-anchors ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+
+.nav-anchors a{
+    text-decoration: none;
+    padding: 0 2rem;
+    font: 600 2rem Roboto;
+    color: var(--color-secondary);
+}
+
+#form-container{
+    border-radius: 5rem;
+
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    font: 600 2rem Roboto;
+
+    margin-top: 3rem;
+    height: 75vh;
+    width: 55vw;
+
+    display: flex;
+}
+
+#form-container form{
+    margin: 2rem;
+    width: fit-content;
+}
+
+#form-container form input{
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+}
+
+.motorista, .carro, .itinerario{
+    display: flex;
+}
+
+.item {
+    margin-right: 2rem;
+}
+
+.enviar {
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+
+.enviar input[type=submit]{
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    font: 600 2rem Roboto;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.image {
+    height: fit-content;
+    margin-top: 30rem;
+    margin-left: 5rem;
+}

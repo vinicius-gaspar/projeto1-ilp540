@@ -1,0 +1,45 @@
+.navbar{
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+    position: fixed;
+    top: 0;
+    background: var(--color-primary);
+}
+
+.logo{
+    font: 700 2.5rem Oleo Script Swash Caps;
+    color: var(--color-secondary);
+
+    height: fit-content;
+    margin-top: 0.5rem;
+}
+
+.logo p{
+    line-height: 0%;
+}
+
+.nav-anchors {
+    margin-left: 80rem;
+    height: fit-content;
+    margin-top: 0.7rem;
+}
+
+.nav-anchors ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+
+.nav-anchors a{
+    text-decoration: none;
+    padding: 0 2rem;
+    font: 600 2rem Roboto;
+    color: var(--color-secondary);
+}
