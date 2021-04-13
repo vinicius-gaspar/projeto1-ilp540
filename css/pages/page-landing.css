@@ -1,26 +1,37 @@
+.index{
+    background-color: var(--color-primary);
+}
+
 #container {
-    background: var(--color-primary);
-    width: 500px;
-    height: 500px;
-    margin-top: 30px;
-    border-radius: 50px;
+    width: 100vw;
+    height: 98vh;
 }
 
 .title-container {
     text-align: center;
-    margin-top: 2rem;
-    padding: 1rem 0 0 0;
-
-    font: 700 4rem Oleo Script Swash Caps;
-    color: var(--color-secondary);
 }
 
-.subtitle-container {
-    text-align: center;
-    padding-bottom: 6rem;
-
-    font: 400 2rem Roboto;
+h1 {
+    font: 700 5.5rem Oleo Script Swash Caps;
     color: var(--color-secondary);
+    margin-top: 2rem;
+    line-height: 100%;
+}
+
+h4 {
+    font: 400 2.5rem Roboto;
+    color: var(--color-secondary);
+    line-height: 100%;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.video {
+    width: 65rem;
+    height: 30rem;
+    margin: 1rem auto;
 }
 
 .button-container{
@@ -28,12 +39,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
 }
 
 .button-container a{
     text-align: center;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 5rem;
     background: var(--color-secondary);
     border-radius: 15px;
 
@@ -43,9 +53,9 @@
 }
 
 .procurar {
-    margin-right: 2rem;
+    margin-right: 5rem;
 }
 
 .oferecer {
-    margin-left: 2rem;
+    margin-left: 5rem;
 }
