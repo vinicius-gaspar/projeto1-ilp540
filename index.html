@@ -5,39 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/pages/page-landing.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pages/page-landing.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 </head>
 <body class="index">
-    <div id="container">
+    <main id="container">
 
         <div class="title-container">
             <h1>Leva eu!</h1>
-
-            <h4>Ofereça ou encontre sua carona</h4>
+            <marquee direction="right" scrolldelay="20"><span>Ofereça ou encontre sua carona</span></marquee>
         </div>
 
         <div class="video-container">
-            
-            <p>
-            <iframe class="video" src="https://www.youtube.com/watch?v=5xy4n73WOMM&ab_channel=IGN"></iframe>
-            </p>
-
+            <video class="video" width="1000" height="500px" controls>
+                <source src="./assets/videos/UBER.mp4">
+            </video>
         </div>
 
         <div class="button-container">
-            <a href="/procurar-carona.html" class="procurar">
-                Procurar carona
-            </a>
-            <a href="/oferecer-carona.html" class="oferecer">
+            <a href="./oferecer-carona.html" class="home-link">
                 Oferecer carona
+            </a>
+            <a href="./procurar-carona.html" class="home-link">
+                Procurar carona
             </a>
         </div>
 
-    </div>
+    </main>
 </body>
 </html>

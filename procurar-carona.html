@@ -5,33 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oferecer</title>
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/pages/oferecer-carona.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pages/procurar-carona.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-    <nav class="navbar">
-
-        <div class="logo">
-            <p>Leva eu!</p>
-        </div>
-
-        <div class="nav-anchors">
-            <ul>
+    <header class="header">
+        <h1 class="logo">Leva eu!</h1>
+    
+        <nav class="navbar">
+            <ul class="nav-menu">
                 <li>
-                    <a href="/index.html">Início</a>
+                    <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> <span class="link-label">Início</span></a>
                 </li>
                 <li>
-                    <a href="/oferecer-carona.html">Oferecer</a>
+                    <a class="nav-link" href="./oferecer-carona.html"><i class="fa fa-car"></i> <span class="link-label">Oferecer Carona</span></a>
+                </li>
+                <li>
+                    <a class="nav-link selected" href="#"><i class="fa fa-search"></i> <span class="link-label">Procurar Carona</span></a>
                 </li>
             </ul>
-        </div>
+        </nav>
+    </header>
 
-    </nav>
+    <main class="main">
+        <form class="search-bar">
+            <button type="submit"><i class="fa fa-search"></i> </button><input type="text" placeholder="Pesquisar...">
+        </form>
+
+        <table class="caronas-disponiveis">
+            <thead>
+                <tr>
+                    <th>Motorista</th>
+                    <th>Carro</th>
+                    <th>Placa</th>
+                    <th>Origem</th>
+                    <th>Destino</th>
+                    <th>Preço por Pessoa</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Thiago</td>
+                    <td>Celta</td>
+                    <td>ABC-1234</td>
+                    <td>Avenida Paulista, São Paulo - SP</td>
+                    <td>Peruíbe</td>
+                    <td>R$ 30,00</td>
+                    <td class="action"><button>Enviar Mensagem</button></td>
+                </tr>
+                <tr>
+                    <td>Thiago</td>
+                    <td>Celta</td>
+                    <td>ABC-1234</td>
+                    <td>Avenida Paulista, São Paulo - SP</td>
+                    <td>Peruíbe</td>
+                    <td>R$ 30,00</td>
+                    <td class="action"><button>Enviar Mensagem</button></td>
+                </tr>
+                <tr>
+                    <td>Thiago</td>
+                    <td>Celta</td>
+                    <td>ABC-1234</td>
+                    <td>Avenida Paulista, São Paulo - SP</td>
+                    <td>Peruíbe</td>
+                    <td>R$ 30,00</td>
+                    <td class="action"><button>Enviar Mensagem</button></td>
+                </tr>
+                <tr>
+                    <td>Thiago</td>
+                    <td>Celta</td>
+                    <td>ABC-1234</td>
+                    <td>Avenida Paulista, São Paulo - SP</td>
+                    <td>Peruíbe</td>
+                    <td>R$ 30,00</td>
+                    <td class="action"><button>Enviar Mensagem</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 
 </body>
 </html>

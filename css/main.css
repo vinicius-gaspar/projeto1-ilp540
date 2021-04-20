@@ -1,17 +1,68 @@
 :root {
-    --color-background: #6088EE;
-    --color-primary: #143B57;
-    --color-secondary: #C6DF2D;
-    font-size: 60.0%; /* controle das medidas rem */
+  --color-background: #6088ee;
+  --color-primary: #143b57;
+  --color-secondary: #c6df2d;
+
+  --heading-font-size: 4rem;
+
+  --header-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Oleo Script Swash Caps;
 }
 
 body {
-    background: var(--color-background);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0;
+  background: var(--color-background);
 }
 
-html, body {
-    height: 98vh;
+a {
+  text-decoration: none;
+}
+
+header.header {
+  display: flex;
+  align-items: center;
+
+  height: var(--header-height);
+  background-color: var(--color-primary);
+  padding-left: 20px;
+}
+
+.navbar ul.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar a.nav-link {
+  color: var(--color-secondary);
+  margin-left: 60px;
+
+  padding: 20px 15px;
+
+  font-size: 1.6rem;
+
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.navbar a.nav-link:hover {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.navbar a.nav-link.selected {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+header.header h1.logo {
+  color: var(--color-secondary);
+  flex-grow: 10;
+}
+
+span.link-label {
+  margin-left: 10px;
 }

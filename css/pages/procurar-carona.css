@@ -1,45 +1,73 @@
-.navbar{
-    width: 100vw;
-    height: 10vh;
-
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-
-    position: fixed;
-    top: 0;
-    background: var(--color-primary);
+main.main {
+  padding: 40px;
 }
 
-.logo{
-    font: 700 2.5rem Oleo Script Swash Caps;
-    color: var(--color-secondary);
+form.search-bar {
+  display: flex;
+  align-items: center;
 
-    height: fit-content;
-    margin-top: 0.5rem;
+  background-color: white;
+  padding: 10px;
+  width: 30%;
+
+  border-radius: 8px;
 }
 
-.logo p{
-    line-height: 0%;
+form.search-bar input,
+form.search-bar button {
+  border: none;
+  background-color: white;
+  color: #999;
+
+  font-family: Arial;
 }
 
-.nav-anchors {
-    margin-left: 80rem;
-    height: fit-content;
-    margin-top: 0.7rem;
+form.search-bar input {
+  font-size: 1rem;
+  flex-grow: 1;
+  margin-left: 10px;
 }
 
-.nav-anchors ul{
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-
+form.search-bar button:hover {
+  cursor: pointer;
+  color: #333;
 }
 
-.nav-anchors a{
-    text-decoration: none;
-    padding: 0 2rem;
-    font: 600 2rem Roboto;
-    color: var(--color-secondary);
+table.caronas-disponiveis {
+  width: 100%;
+  margin-top: 40px;
+  color: var(--color-primary);
+}
+
+table.caronas-disponiveis th {
+  text-align: left;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+table.caronas-disponiveis th,
+table.caronas-disponiveis td {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+td button {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 10px;
+
+  font-size: 1.1rem;
+}
+
+td button:hover {
+  cursor: pointer;
+  background-color: var(--color-background);
 }

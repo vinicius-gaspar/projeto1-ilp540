@@ -5,36 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oferecer</title>
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/pages/oferecer-carona.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pages/oferecer-carona.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-    <nav class="navbar">
-
-        <div class="logo">
-            <p>Leva eu!</p>
-        </div>
-
-        <div class="nav-anchors">
-            <ul>
+    <header class="header">
+        <h1 class="logo">Leva eu!</h1>
+    
+        <nav class="navbar">
+            <ul class="nav-menu">
                 <li>
-                    <a href="/index.html">Início</a>
+                    <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> <span class="link-label">Início</span></a>
                 </li>
                 <li>
-                    <a href="/procurar-carona.html">Caronas</a>
+                    <a class="nav-link selected" href="#"><i class="fa fa-car"></i> <span class="link-label">Oferecer Carona</span></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./procurar-carona.html"><i class="fa fa-search"></i> <span class="link-label">Procurar Carona</span></a>
                 </li>
             </ul>
-        </div>
+        </nav>
+    </header>
 
-    </nav>
-
+    <main class="main">
+        <article class="card">
+            <h2>Oferecer Carona</h2>
+            <form>
+                <input class="span2" type="text" placeholder="Nome do motorista">
+                <input type="text" placeholder="Celular">
+                <input class="span2" type="text" placeholder="Modelo do carro">
+                <input type="text" placeholder="Placa">
+                <input type="text" placeholder="Origem">
+                <input type="text" placeholder="Destino"><br>
+                <input type="date" placeholder="Data">
+                <input type="text" placeholder="Hora de Saída">
+                <input type="text" placeholder="Valor por Pessoa">
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </main>
     
-    <div id="form-container">
+    <!-- <div id="form-container">
 
         <form action="/oferecer-carona.html">
 
@@ -98,7 +115,7 @@
         </div>
 
     </div>
-
+ -->
     
     
 
