@@ -27,6 +27,12 @@ h1 + marquee {
   line-height: 100%;
 }
 
+.car-img {
+  height: 30px;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
 .video {
   margin: 40px;
 }
